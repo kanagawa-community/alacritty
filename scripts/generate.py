@@ -10,8 +10,6 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 VARIANTS = ["wave", "dragon", "lotus"]
 ANSI = ["black", "red", "green", "yellow", "blue", "magenta", "cyan", "white"]
-# The 16 ANSI colors, normal then bright.
-COLORS = [f"term.{c}" for c in ANSI] + [f"term.bright_{c}" for c in ANSI]
 
 
 def roles(variant):
